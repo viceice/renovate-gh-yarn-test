@@ -23,3 +23,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
+      working-directory: ./npm
+    - run: yarn install --frozen-lockfile
+      working-directory: ./yarn
