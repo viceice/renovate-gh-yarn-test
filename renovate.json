@@ -11,6 +11,7 @@
   "regexManagers": [
     {
       "fileMatch": ["^\\.github/workflows/[^/]+\\.ya?ml$"],
+      "enable": false,
       "matchStrings": [
         "uses:\\s(?<depName>.*?)@(?<currentValue>.*)\\s"
       ],
