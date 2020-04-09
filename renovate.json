@@ -10,8 +10,7 @@
   "github-actions": { "enabled": false } ,
   "regexManagers": [
     {
-      "fileMatch": ["^\\.github/workflows/[^/]+\\.ya?ml$"],
-      "enabled": false,
+      "fileMatch": ["^_\\.github/workflows/[^/]+\\.ya?ml$"],
       "matchStrings": [
         "uses:\\s(?<depName>.*?)@(?<currentValue>.*)\\s"
       ],
