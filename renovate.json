@@ -15,7 +15,8 @@
     },
     {
       "paths": ["npm/**", "yarn/**"],
-      "additionalBranchPrefix": "{{baseDir}}-"
+      "additionalBranchPrefix": "{{baseDir}}-",
+      "commitMessageSuffix": "({{baseDir}})"
     }
   ]
 }
