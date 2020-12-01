@@ -5,7 +5,14 @@ name: test
 
 on:
   push:
-  pull_request:
+    branches:
+      - master
+      - 'renovate/**'
+  workflow_dispatch:
+    inputs:
+
+env:
+  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
 jobs:
   npm:
