@@ -1,9 +1,6 @@
 {
-  "extends": [
-    "config:base",
-    ":dependencyDashboard"
-  ],
-   "hostRules": [
+  "extends": ["config:base", ":dependencyDashboard"],
+  "hostRules": [
     {
       "matchHost": "npm.pkg.github.com",
       "hostType": "npm",
@@ -12,6 +9,7 @@
       }
     }
   ],
+  "rebaseWhen": "behind-base-branch",
   "packageRules": [
     {
       "managers": ["npm"],
