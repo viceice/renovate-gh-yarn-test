@@ -3,10 +3,15 @@
     "config:base",
     ":dependencyDashboard"
   ],
-  "encrypted": {
-    "npmToken": "xU4zH04mptcUU+8TBINj5YpePiOkhYQnAQu8pDfqSVR3CcPoRRAPnJ73YblZzk3UbEH61l7WhZsi54eC1t1P3LPdINaAJAHowOSrWN33/DkZeix1BwzkJfc+6vewLAylDgPuCUZS3ElCrheC9VkPrHBii87LFMvgKN5hifqjFyx5Wc1ZWHZIKoFvR+Y+pRTrztWt+dQsF1bZZMosRFTDU1ArerL0nHj4nMjztm78Qpbu9GPF16wbnT6wrtLpkH9s1kLGwlgR4z+f9C0dtq98LZPIwALgbuztKEAf2Fms9abjOCe50vevZ34A84GXDxDKpwCOGsRiamTsmXD5fxBjQA=="
-  },
-  "npmrc": "registry=https://npm.pkg.github.com/viceice/\n_authToken=${NPM_TOKEN}",
+   "hostRules": [
+    {
+      "matchHost": "npm.pkg.github.com",
+      "hostType": "npm",
+      "encrypted": {
+        "token": "xU4zH04mptcUU+8TBINj5YpePiOkhYQnAQu8pDfqSVR3CcPoRRAPnJ73YblZzk3UbEH61l7WhZsi54eC1t1P3LPdINaAJAHowOSrWN33/DkZeix1BwzkJfc+6vewLAylDgPuCUZS3ElCrheC9VkPrHBii87LFMvgKN5hifqjFyx5Wc1ZWHZIKoFvR+Y+pRTrztWt+dQsF1bZZMosRFTDU1ArerL0nHj4nMjztm78Qpbu9GPF16wbnT6wrtLpkH9s1kLGwlgR4z+f9C0dtq98LZPIwALgbuztKEAf2Fms9abjOCe50vevZ34A84GXDxDKpwCOGsRiamTsmXD5fxBjQA=="
+      }
+    }
+  ]
   "packageRules": [
     {
       "managers": ["npm"],
