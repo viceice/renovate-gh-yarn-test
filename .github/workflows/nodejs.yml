@@ -6,10 +6,9 @@ name: test
 on:
   push:
     branches:
-      - master
+      - main
       - 'renovate/**'
   workflow_dispatch:
-    inputs:
 
 env:
   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
